@@ -192,6 +192,8 @@ article {
 
 .navbar__menu ul a:hover {
     border-bottom: 2px #FFFFFF solid;
+    transform: scale(1.1);
+    /* transition: all .5s; */
 }
 
 .header {
@@ -222,6 +224,10 @@ article {
 .header__titulo {
     z-index: 2;
     width: 40rem;
+    animation-name: titulo;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
 }
 
 .header__titulo h1 {
@@ -314,6 +320,9 @@ article {
 
 .section__trabajos__trabajo--home img {
     width: 100vw;
+}
+.section__trabajos__trabajo--home img:hover {
+    transform:rotate(3deg) scale(.98);
 }
 
 .section__trabajos__trabajo__info--home {
@@ -483,6 +492,7 @@ article {
 .section__trabajos__container__trabajo__imagen {
     width: fit-content;
     background-color: transparent;
+    z-index: 1;
 }
 
 .section__trabajos__container__trabajo__imagen img {
@@ -496,7 +506,10 @@ article {
     background-color: rgba(3, 101, 140, .7);
     height: 100%;
     width: 100%;
-    display: none;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    opacity: 0;
 }
 
 .section__trabajos__container__trabajo__hover__titulo {
@@ -504,10 +517,10 @@ article {
     margin: 0 1rem 1rem 1rem;
 }
 
-.section__trabajos__container__trabajo__imagen:hover~.section__trabajos__container__trabajo__hover {
-    display: flex;
-    justify-content: end;
-    align-items: end;
+.section__trabajos__container__trabajo:hover .section__trabajos__container__trabajo__hover {
+    z-index: 2;
+    opacity: 1;
+    transition: all 1s;
 }
 
 /* NOSOTROS */
@@ -793,4 +806,13 @@ article {
     .footer__widget:nth-child(3) {
         order: 3;
     }
+}
+
+/* ANIMACIONES KEYFRAMES */
+
+@keyframes titulo {
+    0% {opacity: 0; width: 35rem;}
+    50% {opacity: .5; width: 42rem;}
+    75% {opacity: .75; width: 38rem;}
+    100% {opacity: 1; width: 40rem;}
 }
