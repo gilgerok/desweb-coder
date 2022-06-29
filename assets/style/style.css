@@ -28,6 +28,7 @@ TIPOGRAFÍAS
 html {
     font-size: 14px;
 }
+
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -130,15 +131,19 @@ article {
 .zindex-5 {
     z-index: 500;
 }
+
 .zindex-4 {
     z-index: 400;
 }
+
 .zindex-3 {
     z-index: 300;
 }
+
 .zindex-2 {
     z-index: 200;
 }
+
 .zindex-1 {
     z-index: 100;
 }
@@ -149,6 +154,7 @@ article {
     position: sticky;
     top: 0;
 }
+
 .navbarAstor {
     background-color: #022859;
     height: 5rem;
@@ -174,7 +180,6 @@ article {
     font-weight: 600;
     border-bottom: 2px #022859 solid;
     align-items: center;
-    /* width: 10rem; */
     justify-content: center;
     padding: 0 1.5rem;
 }
@@ -183,26 +188,21 @@ article {
     border-bottom: 2px #FFFFFF solid;
     color: #e25d8e;
     transform: scale(1.1);
-    /* transition: all .5s; */
 }
-.header *,.header--home *{
+
+.header *,
+.header--home * {
     color: #FFFFFF;
 }
 
 .header {
-    /* width: 100vw; */
-    height: 200px;
+    padding:4rem 0;
     background-color: #022859;
     text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 2rem;
 }
 
 .header--home {
     position: relative;
-    /* width: 100vw; */
     height: calc(100vh - 5rem);
     background-image: url(../images/presentacion.jpg);
     background-size: cover;
@@ -231,44 +231,18 @@ article {
     color: #F4F4F4;
 }
 
-/* .main {
-    grid-area: contenido;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
+.section__titulo {
+    margin: 1rem 0 1rem .5rem;
+}
 
-/* .section {
-    max-width: 1360px;
-} */
 
-/* .section__article__servicio {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    height: 17.5rem;
-    overflow: hidden;
-    gap: 1rem;
-} */
+.section__servicios h3 {
+    margin: .9rem 0;
+}
 
-/* .section__servicios h2 {
-    margin: 0 2rem;
-} */
-
-/* .section__article__servicio__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0px 2rem;
-} */
-
-/* .section__article__servicio__img img {
-    width: 100vw;
-} */
-
-/* .invertido {
-    flex-direction: column;
-} */
+.section__trabajos--home h4 {
+    margin: .8rem 0;
+}
 
 .boton {
     display: inline-block;
@@ -289,7 +263,7 @@ article {
 }
 
 .imgTrabajos:hover {
-    transform:rotate(3deg) scale(.98);
+    transform: rotate(3deg) scale(.98);
 }
 
 .section__contacto {
@@ -341,6 +315,7 @@ article {
     border-bottom: none;
     padding: 0;
 }
+
 .section__microServicio__article {
     display: flex;
     flex-direction: column;
@@ -360,14 +335,10 @@ article {
 }
 
 .callToAction {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 3rem 0;
     background-color: #FF7BAC;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .callToAction__contacto__titulo {
@@ -391,21 +362,14 @@ article {
 
 /* TRABAJOS */
 .section__trabajos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border-bottom: none;
 }
 
 .section__trabajos__container {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
+
 }
 
 .section__trabajos__container__trabajo {
-    width: calc(50% - 1.5rem);
     position: relative;
     margin: 0;
 }
@@ -423,10 +387,10 @@ article {
 .section__trabajos__container__trabajo__hover {
     position: absolute;
     top: 0;
-    left: 0;
+    left: calc(var(--bs-gutter-x) * .5);
     background-color: rgba(3, 101, 140, .7);
     height: 100%;
-    width: 100%;
+    width: calc(100% - var(--bs-gutter-x));
     display: flex;
     justify-content: end;
     align-items: end;
@@ -458,18 +422,22 @@ article {
     align-items: center;
     gap: 2rem;
 }
+
 .section__nosotros__article__imagen {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .section__nosotros__article__imagen img {
     width: 100%;
     max-width: 600px;
 }
+
 .section__nosotros__article__texto {
     margin: 0 1rem;
 }
+
 .section__asiTrabajamos {
     display: flex;
     flex-direction: column;
@@ -483,9 +451,11 @@ article {
     max-width: 900px;
     margin: 0 1rem;
 }
+
 .section__asiTrabajamos__container__imagen {
     display: none;
 }
+
 .section__asiTrabajamos__container__imagen img {
     width: 100%;
 }
@@ -565,8 +535,23 @@ article {
 /* ANIMACIONES KEYFRAMES */
 
 @keyframes titulo {
-    0% {opacity: 0; width: 35rem;}
-    50% {opacity: .5; width: 42rem;}
-    75% {opacity: .75; width: 38rem;}
-    100% {opacity: 1; width: 40rem;}
+    0% {
+        opacity: 0;
+        width: 35rem;
+    }
+
+    50% {
+        opacity: .5;
+        width: 42rem;
+    }
+
+    75% {
+        opacity: .75;
+        width: 38rem;
+    }
+
+    100% {
+        opacity: 1;
+        width: 40rem;
+    }
 }
