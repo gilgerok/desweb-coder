@@ -196,7 +196,7 @@ article {
 }
 
 .header {
-    padding:4rem 0;
+    padding: 4rem 0;
     background-color: #022859;
     text-align: left;
 }
@@ -363,10 +363,6 @@ article {
 /* TRABAJOS */
 .section__trabajos {
     border-bottom: none;
-}
-
-.section__trabajos__container {
-
 }
 
 .section__trabajos__container__trabajo {
