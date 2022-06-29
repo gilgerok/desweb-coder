@@ -101,7 +101,7 @@ h6 {
 }
 
 span {
-    color: #03A696;
+    color: #03A696 !important;
 }
 
 strong {
@@ -212,7 +212,7 @@ article {
     align-items: center;
 }
 
-.header__titulo {
+.header__animacion {
     z-index: 2;
     width: 40rem;
     animation-name: titulo;
@@ -406,63 +406,63 @@ article {
 
 /* NOSOTROS */
 
-.section__nosotros {
+/* .section__nosotros {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
-.section__nosotros__article {
+/* .section__nosotros__article {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-}
+} */
 
-.section__nosotros__article__imagen {
+/* .section__nosotros__article__imagen {
     width: 100%;
     display: flex;
     justify-content: center;
-}
+} */
 
-.section__nosotros__article__imagen img {
+/* .section__nosotros__article__imagen img {
     width: 100%;
     max-width: 600px;
-}
+} */
 
 .section__nosotros__article__texto {
     margin: 0 1rem;
 }
 
-.section__asiTrabajamos {
+/* .section__asiTrabajamos {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-}
+} */
 
-.section__asiTrabajamos__container {
+/* .section__asiTrabajamos__container {
     display: flex;
     align-items: center;
     max-width: 900px;
     margin: 0 1rem;
-}
+} */
 
-.section__asiTrabajamos__container__imagen {
+/* .section__asiTrabajamos__container__imagen {
     display: none;
-}
+} */
 
-.section__asiTrabajamos__container__imagen img {
+/* .section__asiTrabajamos__container__imagen img {
     width: 100%;
-}
+} */
 
-.section__asiTrabajamos__container__etapas__etapa {
+/* .section__asiTrabajamos__container__etapas__etapa {
     display: flex;
     align-items: flex-start;
     column-gap: 1rem;
-}
+} */
 
-.callToAction--nosotros {
+/* .callToAction--nosotros {
     max-width: 1360px;
     margin-bottom: 3rem;
 }
@@ -472,11 +472,11 @@ article {
     gap: 2rem;
     align-items: center;
     flex-direction: column;
-}
+} */
 
-.callToAction__contacto__mensaje p {
+/* .callToAction__contacto__mensaje p {
     text-align: left;
-}
+} */
 
 /* FOOTER */
 .footer {

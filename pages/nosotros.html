@@ -12,79 +12,129 @@
 </head>
 
 <body>
-    <div class="gridcontainer">
-        <nav class="navbar">
-            <div class="navbar__logo">
-                <a href="../index.html"><img src="../assets/images/logoAstorMenu.png" alt="Logo Astornauta"></a>
-            </div>
-            <div class="navbar__menu">
-                <ul>
-                    <a href="../index.html#servicios">
-                        <li>Servicios</li>
-                    </a>
-                    <a href="../index.html#trabajos">
-                        <li>Trabajos</li>
-                    </a>
-                    <a href="../index.html#nosotros">
-                        <li>Nosotros</li>
-                    </a>
-                    <a href="../index.html#contacto">
-                        <li>Contacto</li>
-                    </a>
-                </ul>
-            </div>
-        </nav>
-        <header class="header">
-            <div class="header__titulo">
-                <h1>No caminamos, <span>volamos</span></h1>
-            </div>
-            <div class="header__descripcion">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur pariatur eum voluptas deleniti
-                    sit saepe ex eaque accusamus reprehenderit corporis.</p>
-            </div>
-        </header>
-        <main class="main">
-            <section id="nosotros" class="section section__nosotros">
-                <article class="section__nosotros__article invertido">
-                    <div class="section__nosotros__article__imagen">
-                        <img src="../assets/images/nosotros01.jpg" alt="Imagen representativa - Nosotros">
+    <nav class="navbarAstor d-none d-lg-flex align-items-center sticky-top zindex-5">
+        <div class="container-md">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-5">
+                    <div class="navbar__logo">
+                        <a href="../index.html"><img src="../assets/images/logoAstorMenu.png" alt="Logo Astornauta"></a>
                     </div>
-                    <div class="section__nosotros__article__texto">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odio repellat minima, itaque
-                            et aliquam ipsum. Reprehenderit eum magnam nobis laudantium iure sit consequatur doloremque,
-                            voluptatum cumque possimus ipsa inventore nemo est labore excepturi animi rem vel quos aut
-                            cupiditate iusto maiores numquam molestiae dignissimos. Esse nesciunt blanditiis iste
-                            tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vitae eius hic
-                            illo delectus fugiat illum ratione at cumque eaque.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quo dolores cum! Iure, ipsum
-                            consequuntur! Nobis numquam eius cupiditate suscipit!</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="navbar__menu">
+                        <ul class="d-flex justify-content-end">
+                            <a href="../index.html#servicios">
+                                <li>Servicios</li>
+                            </a>
+                            <a href="../index.html#trabajos">
+                                <li>Trabajos</li>
+                            </a>
+                            <a href="../index.html#nosotros">
+                                <li>Nosotros</li>
+                            </a>
+                            <a href="../index.html#contacto">
+                                <li>Contacto</li>
+                            </a>
+                        </ul>
                     </div>
-                </article>
-                <article class="section__nosotros__article">
-                    <div class="section__nosotros__article__imagen">
-                        <img src="../assets/images/nosotros02.jpg" alt="Imagen representativa - Nosotros">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container-md">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 header__animacion">
+                    <div class="header__titulo text-center text-xl-start">
+                        <h1>Así somos, <span>así trabajamos</span></h1>
                     </div>
-                    <div class="section__nosotros__article__texto">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odio repellat minima, itaque
-                            et aliquam ipsum. Reprehenderit eum magnam nobis laudantium iure sit consequatur doloremque,
-                            voluptatum cumque possimus ipsa inventore nemo est labore excepturi animi rem vel quos aut
-                            cupiditate iusto maiores numquam molestiae dignissimos. Esse nesciunt blanditiis iste
-                            tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vitae eius hic
-                            illo delectus fugiat illum ratione at cumque eaque.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quo dolores cum! Iure, ipsum
-                            consequuntur! Nobis numquam eius cupiditate suscipit!</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="header__descripcion">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur pariatur eum voluptas
+                            deleniti
+                            sit saepe ex eaque accusamus reprehenderit corporis.</p>
                     </div>
-                </article>
-                <a href="../index.html#contacto" class="boton section__nosotros__boton">Quiero hablar con ustedes</a>
-            </section>
-            <section class="section section__asiTrabajamos">
-                <h2 class="section__asiTrabajamos__titulo">
-                    Así trabajamos
-                </h2>
-                <div class="section__asiTrabajamos__container">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section id="nosotros" class="container-md section__nosotros">
+            <article>
+                <div class="row">
+                    <div class="col-lg-5 order-1 order-lg-1">
+                        <div class="section__nosotros__article__imagen">
+                            <img src="../assets/images/nosotros01.jpg" alt="Imagen representativa - Nosotros"
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-flex align-items-center order-2 order-lg-2">
+                        <div class="section__nosotros__article__texto">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odio repellat minima,
+                                itaque
+                                et aliquam ipsum. Reprehenderit eum magnam nobis laudantium iure sit consequatur
+                                doloremque,
+                                voluptatum cumque possimus ipsa inventore nemo est labore excepturi animi rem vel quos
+                                aut
+                                cupiditate iusto maiores numquam molestiae dignissimos. Esse nesciunt blanditiis iste
+                                tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vitae eius
+                                hic
+                                illo delectus fugiat illum ratione at cumque eaque.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quo dolores cum! Iure,
+                                ipsum
+                                consequuntur! Nobis numquam eius cupiditate suscipit!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 d-flex align-items-center order-2 order-lg-1">
+                        <div class="section__nosotros__article__texto">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odio repellat minima,
+                                itaque
+                                et aliquam ipsum. Reprehenderit eum magnam nobis laudantium iure sit consequatur
+                                doloremque,
+                                voluptatum cumque possimus ipsa inventore nemo est labore excepturi animi rem vel quos
+                                aut
+                                cupiditate iusto maiores numquam molestiae dignissimos. Esse nesciunt blanditiis iste
+                                tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vitae eius
+                                hic
+                                illo delectus fugiat illum ratione at cumque eaque.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quo dolores cum! Iure,
+                                ipsum
+                                consequuntur! Nobis numquam eius cupiditate suscipit!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-1 order-lg-2">
+                        <div class="section__nosotros__article__imagen">
+                            <img src="../assets/images/nosotros02.jpg" alt="Imagen representativa - Nosotros"
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center mt-4">
+                        <a href="../index.html#contacto" class="boton section__nosotros__boton">Quiero hablar con
+                            ustedes</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="container-md section__asiTrabajamos">
+            <div class="row">
+                <div class="col">
+                    <h2 class="section__asiTrabajamos__titulo">
+                        Así trabajamos
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 d-none d-lg-block">
                     <div class="section__asiTrabajamos__container__imagen">
-                        <img src="../assets/images/nosotros-trabajo.png" alt="Así trabajamos">
+                        <img src="../assets/images/nosotros-trabajo.png" alt="Así trabajamos" class="img-fluid">
                     </div>
+                </div>
+                <div class="col-lg-8 d-flex align-items-center mt-4 mt-lg-0">
                     <div class="section__asiTrabajamos__container__etapas">
                         <div class="section__asiTrabajamos__container__etapas__etapa">
                             <img src="../assets/images/icon01.png" alt="Ícono representativo">
@@ -112,48 +162,64 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <aside class="callToAction callToAction--nosotros">
-                <div class="callToAction__contacto--nosotros">
-                    <div class="callToAction__contacto__mensaje">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, qui?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illum.</p>
-                    </div>
-                    <a href="../index.html#contacto" class="boton callToAction__contacto__boton">¡Hablemos!</a>
+            </div>
+        </section>
+        <aside class="callToAction container-fluid">
+            <div class="callToAction__contacto row">
+                <div class="col d-flex align-items-center flex-column">
+                    <h2 class="callToAction__contacto__titulo">Lorem ipsum dolor sit amet.</h2>
+                    <p class="callToAction__contacto__mensaje">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Beatae, qui?</p>
+                    <a href="../index.html#contacto" class="boton callToAction__contacto__boton">Quiero hablar con
+                        ustedes</a>
                 </div>
-            </aside>
-        </main>
-        <footer class="footer">
-            <div class="footer__widget">
-                <h4 class="footer__widget__titulo">Contacto</h4>
-                <ul class="footer__widget__lista">
-                    <li>E-mail: <a href="mailto:astornautaok@gmail.com">astornautaok@gmail.com</a></li>
-                    <li>Teléfono: <a href="tel:+5492613613518">+54 9 (261) 361-3518</a></li>
-                </ul>
             </div>
-            <div class="footer__widget__img">
-                <img src="../assets/images/logoAstorFooter.png" alt="Logo Astornauta footer">
+        </aside>
+    </main>
+    <footer class="footer">
+        <div class="container-md">
+            <div class="row">
+                <div
+                    class="col-6 col-lg-4 footer__widget order-2 order-lg-1 d-flex justify-content-start align-items-center flex-column">
+                    <h4 class="footer__widget__titulo">Contacto</h4>
+                    <ul class="footer__widget__lista">
+                        <li>E-mail:<br /><a href="mailto:astornautaok@gmail.com">astornautaok@gmail.com</a></li>
+                        <li>Teléfono:<br /><a href="tel:+5492613613518">+54 9 (261) 361-3518</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="col-12 col-lg-4 footer__widget__img order-1 order-lg-2 d-flex justify-content-center mb-4 mb-lg-0">
+                    <img src="../assets/images/logoAstorFooter.png" alt="Logo Astornauta footer">
+                </div>
+                <div
+                    class="col-6 col-lg-4 footer__widget order-3 order-lg-3 d-flex justify-content-start align-items-center flex-column">
+                    <h4 class="footer__widget__titulo">We are social</h4>
+                    <ul class="footer__widget__lista--redes">
+                        <li><a href="https://facebook.com/astornautaok"><img src="../assets/images/facebook.png"
+                                    alt="Logo Facebook"></a></li>
+                        <li><a href="https://instagram.com/astornautaok"><img src="../assets/images/instagram.png"
+                                    alt="Logo Instagram"></a></li>
+                        <li><a href="https://linkedin.com/company/astornautaok"><img src="../assets/images/linkedin.png"
+                                    alt="Logo Linkedin"></a></li>
+                        <li><a href="https://twitter.com/astornautaok"><img src="../assets/images/twitter.png"
+                                    alt="Logo Twitter"></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer__widget">
-                <h4 class="footer__widget__titulo">We are social</h4>
-                <ul class="footer__widget__lista--redes">
-                    <li><a href="https://facebook.com/astornautaok"><img src="../assets/images/facebook.png"
-                                alt="Logo Facebook"></a></li>
-                    <li><a href="https://instagram.com/astornautaok"><img src="../assets/images/instagram.png"
-                                alt="Logo Instagram"></a></li>
-                    <li><a href="https://linkedin.com/company/astornautaok"><img src="../assets/images/linkedin.png"
-                                alt="Logo Linkedin"></a></li>
-                    <li><a href="https://twitter.com/astornautaok"><img src="../assets/images/twitter.png"
-                                alt="Logo Twitter"></a></li>
-                </ul>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container-md">
+            <div class="row">
+                <div class="col">
+                    <p>Sitio desarrollado por <a href="https://linkedin.com/in/gilgerok">Gerardo Gil</a> para
+                        Coderhouse
+                        en 2022.</p>
+                </div>
             </div>
-        </footer>
-        <div class="copyright">
-            <p>Sitio desarrollado por <a href="https://linkedin.com/in/gilgerok">Gerardo Gil</a> para Coderhouse en
-                2022.</p>
         </div>
     </div>
-    
+
     <!-- SCRIPTS -->
     <script src="../assets/js/bootstrap.js"></script>
 </body>
