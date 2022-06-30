@@ -317,24 +317,6 @@ article {
     padding: 0;
 }
 
-.section__microServicio__article {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1rem;
-}
-
-.section__microServicio__article__texto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 1rem;
-}
-
-.section__microServicio__article__imagen img {
-    width: 100%;
-}
-
 .callToAction {
     padding: 3rem 0;
     background-color: #FF7BAC;
