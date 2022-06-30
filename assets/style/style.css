@@ -102,6 +102,7 @@ h6 {
 
 span {
     color: #03A696 !important;
+    display: block;
 }
 
 strong {
