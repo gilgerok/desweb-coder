@@ -12,32 +12,30 @@
 </head>
 
 <body>
-    <nav class="navbarAstor d-none d-lg-flex align-items-center sticky-top zindex-5">
+    <nav class="navbar navbar-expand-xl navbar-dark navbarAstor">
         <div class="container-md">
-            <div class="row d-flex justify-content-between">
-                <div class="col-lg-5">
-                    <div class="navbar__logo">
-                        <a href="../index.html"><img src="../assets/images/logoAstorMenu.png" alt="Logo Astornauta"></a>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="navbar__menu">
-                        <ul class="d-flex justify-content-end">
-                            <a href="../index.html#servicios">
-                                <li>Servicios</li>
-                            </a>
-                            <a href="../index.html#trabajos">
-                                <li>Trabajos</li>
-                            </a>
-                            <a href="../index.html#nosotros">
-                                <li>Nosotros</li>
-                            </a>
-                            <a href="../index.html#contacto">
-                                <li>Contacto</li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
+            <a class="navbar-brand navbar__logo" href="../index.html">
+                <img src="../assets/images/logoAstorMenu.png" alt="Logo Astornauta">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                <ul class="navbar-nav text-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html#trabajos">Trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contacto">Contacto</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

@@ -164,7 +164,7 @@ article {
     height: 100%;
 }
 
-.navbar__logo a>img {
+.navbar__logo img {
     height: 2rem;
 }
 
@@ -227,7 +227,7 @@ article {
 }
 
 .header__descripcion {
-    width: 30rem;
+    /* width: 30rem; */
     color: #F4F4F4;
 }
 
