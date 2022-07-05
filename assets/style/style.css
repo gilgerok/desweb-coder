@@ -100,9 +100,13 @@ h6 {
     font-weight: 600;
 }
 
-span {
+span.resaltar {
     color: #03A696 !important;
     display: block;
+}
+span.destacar {
+    color: #037F8C !important;
+    font-weight: bold;
 }
 
 strong {
