@@ -1,0 +1,39 @@
+.header, .header--home {
+    * {
+    color: $blanco;
+    }
+}
+
+.header {
+    padding: 4rem 0;
+    background-color: $azulOscuro;
+    text-align: left;
+    .header__animacion {
+        z-index: 2;
+        width: 40rem;
+        animation-name: titulo;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+        .header__titulo {
+            h1 {
+            color: $blanco;
+            margin: 1.7rem;
+            }
+        }
+    }
+    .header__descripcion {
+        color: $grisClaro;
+    }
+}
+
+.header--home {
+    position: relative;
+    height: calc(100vh - 5rem);
+    background-image: url(../images/presentacion.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

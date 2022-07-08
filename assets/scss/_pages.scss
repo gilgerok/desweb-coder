@@ -1,0 +1,93 @@
+.section__trabajos--home h4 {
+    margin: .8rem 0;
+}
+
+.section__contacto {
+    border-bottom: none;
+
+    .section__contacto__formulario {
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: auto;
+        }
+
+        input,
+        select,
+        textarea {
+            margin: 1rem 0px;
+            padding: .75rem;
+            border-radius: .5rem;
+            background-color: $grisClaro;
+            border: none;
+        }
+
+        input[type='submit'] {
+            background-color: $rosa;
+            color: $grisClaro;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: .9rem;
+            width: fit-content;
+
+            &:hover {
+                background-color: #e25d8e;
+                color: $grisClaro;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: .9rem;
+                width: fit-content;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .iframeMapa {
+        height: 40rem;
+    }
+}
+
+.section__microServicio {
+    border-bottom: none;
+    padding: 0;
+}
+
+.section__trabajos {
+    border-bottom: none;
+
+    .section__trabajos__container__trabajo {
+        position: relative;
+        margin: 0;
+
+        .section__trabajos__container__trabajo__hover {
+            position: absolute;
+            top: 0;
+            left: calc(var(--bs-gutter-x) * .5);
+            background-color: rgba(3, 101, 140, .7);
+            height: 100%;
+            width: calc(100% - var(--bs-gutter-x));
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            opacity: 0;
+
+            .section__trabajos__container__trabajo__hover__titulo {
+                color: $blanco;
+                margin: 0 1rem 1rem 1rem;
+            }
+        }
+
+        &:hover {
+            .section__trabajos__container__trabajo__hover {
+                z-index: 2;
+                opacity: 1;
+                transition: all 1s;
+            }
+        }
+    }
+}
+
+.section__nosotros__article__texto {
+    margin: 0 1rem;
+}

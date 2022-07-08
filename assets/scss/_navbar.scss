@@ -1,0 +1,32 @@
+.navbarAstor {
+    background-color: $azulOscuro;
+    height: 5rem;
+    .navbar__logo {
+        img {
+            height: 2rem;
+        }
+    }
+}
+
+// .navbar__menu {
+//     height: 100%;
+//     ul {
+//         list-style: none;
+//         height: 100%;
+//         display: flex;
+//         justify-content: stretch;
+//         a {
+//             display: flex;
+//             font-weight: 600;
+//             border-bottom: 2px $azulOscuro solid;
+//             align-items: center;
+//             justify-content: center;
+//             padding: 0 1.5rem;
+//             &:hover {
+//                 border-bottom: 2px $blanco solid;
+//                 color: #e25d8e;
+//                 transform: scale(1.1);
+//             }
+//         }
+//     }
+// }
