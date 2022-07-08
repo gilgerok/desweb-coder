@@ -127,6 +127,11 @@ article {
   height: 5rem; }
   .navbarAstor .navbar__logo img {
     height: 2rem; }
+  .navbarAstor .collapse.show,
+  .navbarAstor .collapsing {
+    margin-top: 1rem;
+    padding-right: 1rem;
+    background-color: #03658C; }
 
 .header *, .header--home * {
   color: #FFFFFF; }
