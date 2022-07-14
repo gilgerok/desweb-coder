@@ -12,6 +12,18 @@
     .collapsing {
         margin-top: 1rem;
         padding-right: 1rem;
-        background-color: $azulVerdoso;
+        background-color: $azulOscuro;
+    }
+
+    .nav-rosa {
+        color: $rosa !important;
+        border-bottom: 3px solid $azulOscuro;
+        &.active-rosa{
+            font-weight: 900;
+        }
+        &:hover {
+            font-weight: 900;
+            border-bottom: 3px solid $rosa;
+        }
     }
 }

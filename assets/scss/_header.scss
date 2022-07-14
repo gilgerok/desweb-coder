@@ -1,10 +1,11 @@
-.header, .header--home {
+.headerColor {
     * {
     color: $blanco;
     }
 }
 
 .header {
+    @extend .headerColor;
     padding: 4rem 0;
     background-color: $azulOscuro;
     text-align: left;
@@ -28,6 +29,7 @@
 }
 
 .header--home {
+    @extend .headerColor;
     position: relative;
     height: calc(100vh - 5rem);
     background-image: url(../images/presentacion.jpg);

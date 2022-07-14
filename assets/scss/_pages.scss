@@ -24,21 +24,17 @@
         }
 
         input[type='submit'] {
+            @extend .boton;
             background-color: $rosa;
             color: $grisClaro;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: .9rem;
-            width: fit-content;
+            // font-weight: 600;
+            // text-transform: uppercase;
+            // font-size: .9rem;
+            // width: fit-content;
 
             &:hover {
                 background-color: #e25d8e;
                 color: $grisClaro;
-                font-weight: 600;
-                text-transform: uppercase;
-                font-size: .9rem;
-                width: fit-content;
-                cursor: pointer;
             }
         }
     }

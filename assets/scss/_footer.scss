@@ -12,16 +12,17 @@
                 font-weight: 600;
             }
         }
-        .footer__widget__lista--redes {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            column-gap: .8rem;
-        }
         .footer__widget__lista {
             list-style: none;
             text-align: center;
             padding: 0;
+        }
+        .footer__widget__lista--redes {
+            @extend .footer__widget__lista;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            column-gap: .8rem;
         }
         .footer__widget__img {
             align-self: center;

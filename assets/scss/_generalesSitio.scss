@@ -10,7 +10,6 @@
     margin: 1rem 0 1rem .5rem;
 }
 
-
 .section__servicios {
     h3 {
         margin: .9rem 0;
@@ -32,6 +31,7 @@
         color: $blanco;
         background-color: $rosa;
         border-color: $blanco;
+        cursor: pointer;
     }
 }
 
@@ -47,16 +47,21 @@
     background-color: $rosa;
     text-align: center;
     margin-bottom: 1rem;
+
     .callToAction__contacto__titulo {
         color: $blanco;
     }
+
     .callToAction__contacto__mensaje {
         color: $grisClaro;
     }
+
     .callToAction__contacto__boton {
+        @extend .boton;
         color: $rosa;
         background-color: $blanco;
         border-color: $blanco;
+
         &:hover {
             color: #e25d8e;
             background-color: $grisClaro;

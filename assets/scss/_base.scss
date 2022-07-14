@@ -35,37 +35,37 @@ h3 {
 }
 
 h1 {
-    color: $azulOscuro;
-    font-size: $h1;
+    color: map-get($titulos, colorH1);
+    font-size: map-get($titulos, fontH1);
 }
 
 h2 {
-    color: $azulVerdoso;
-    font-size: $h2;
+    color: map-get($titulos, colorH2);
+    font-size: map-get($titulos, fontH2);
 }
 
 h3 {
-    font-size: $h3;
-    color: $verdosoAzul;
+    color: map-get($titulos, colorH3);
+    font-size: map-get($titulos, fontH3);
 }
 
 h4,
 h5,
 h6 {
     font-weight: 500;
-    color: $negro;
+    color: map-get($titulos, colorH46);
 }
 
 h4 {
-    font-size: $h4;
+    font-size: map-get($titulos, fontH4);
 }
 
 h5 {
-    font-size: $h5;
+    font-size: map-get($titulos, fontH5);
 }
 
 h6 {
-    font-size: $h6;
+    font-size: map-get($titulos, fontH6);
 }
 
 .destacado {
@@ -98,36 +98,31 @@ article {
     margin: 1.875rem 0px;
 }
 
-.overlay {
-    position: absolute;
+@mixin fullWidth {
     width: 100%;
     height: 100%;
-    left: 0px;
-    top: 0px;
+}
+
+@mixin posicion($posicion,$top,$izq) {
+    position: $posicion;
+    top: $top;
+    left: $izq;
+}
+
+.overlay {
+    @include posicion(absolute, 0, 0);
+    @include fullWidth();
+    @extend .zindex-1;
     background-color: rgba($superNegro, .3);
 }
 
-.zindex-5 {
-    z-index: 500;
-}
-
-.zindex-4 {
-    z-index: 400;
-}
-
-.zindex-3 {
-    z-index: 300;
-}
-
-.zindex-2 {
-    z-index: 200;
-}
-
-.zindex-1 {
-    z-index: 100;
+@for $i from 1 through 5 {
+    .zindex-#{$i}{
+        z-index: $i * 100;
+    }
 }
 
 .sticky-top {
-    position: sticky;
-    top: 0;
+    @include posicion(sticky, 0, 0);
+    @extend .zindex-5;
 }
