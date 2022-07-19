@@ -1,7 +1,9 @@
-// Tipografías
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Raleway:wght@400;500;600&display=swap');
 // Generales
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Raleway:wght@400;500;600&display=swap');
 @import "variables";
+// Bootstrap
+@import "customBootstrap";
+// Otros elementos
 @import "keyframesAnimaciones";
 @import "base";
 // Sitio

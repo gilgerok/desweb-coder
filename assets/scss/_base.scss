@@ -103,12 +103,20 @@ article {
     height: 100%;
 }
 
+@mixin fullView {
+    width: 100vw;
+    height: 100vh;
+}
+
 @mixin posicion($posicion,$top,$izq) {
     position: $posicion;
     top: $top;
     left: $izq;
 }
-
+.fullView {
+        @include posicion(absolute, 0, 0);
+        @include fullView();
+}
 .overlay {
     @include posicion(absolute, 0, 0);
     @include fullWidth();

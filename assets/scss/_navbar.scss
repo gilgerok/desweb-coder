@@ -1,29 +1,32 @@
-.navbarAstor {
+// .navbarAstor {
+//     background-color: $azulOscuro;
+//     height: 5rem;
+
+//     .navbar__logo {
+//         img {
+//             height: 2rem;
+//         }
+//     }
+
+//     .collapse.show,
+//     .collapsing {
+//         margin-top: 1rem;
+//         padding-right: 1rem;
+//         background-color: $azulOscuro;
+//     }
+
+//     .nav-rosa {
+//         color: $rosa !important;
+//         border-bottom: 3px solid $azulOscuro;
+//         &.active-rosa{
+//             font-weight: 900;
+//         }
+//         &:hover {
+//             font-weight: 900;
+//             border-bottom: 3px solid $rosa;
+//         }
+//     }
+// }
+.bg-astor {
     background-color: $azulOscuro;
-    height: 5rem;
-
-    .navbar__logo {
-        img {
-            height: 2rem;
-        }
-    }
-
-    .collapse.show,
-    .collapsing {
-        margin-top: 1rem;
-        padding-right: 1rem;
-        background-color: $azulOscuro;
-    }
-
-    .nav-rosa {
-        color: $rosa !important;
-        border-bottom: 3px solid $azulOscuro;
-        &.active-rosa{
-            font-weight: 900;
-        }
-        &:hover {
-            font-weight: 900;
-            border-bottom: 3px solid $rosa;
-        }
-    }
 }

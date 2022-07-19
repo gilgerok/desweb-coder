@@ -13,14 +13,18 @@
     "url": "git+https://github.com/gilgerok/desweb-coder.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gerardo Gil",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gilgerok/desweb-coder/issues"
   },
   "homepage": "https://github.com/gilgerok/desweb-coder#readme",
   "devDependencies": {
+    "fix": "^0.0.6",
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0"
   }
 }
