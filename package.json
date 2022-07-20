@@ -1,7 +1,7 @@
 {
-  "name": "sitio-web-astornauta---gerardo-gil",
-  "version": "1.0.0",
-  "description": "Sitio web para curso de desarrollo web de Coderhouse.",
+  "name": "sitio-web-astornauta",
+  "version": "1.3.9",
+  "description": "Sitio web desarrollado con HTML, CSS, SASS, Bootstrap para Agencia Astornauta.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
